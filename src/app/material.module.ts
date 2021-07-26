@@ -6,6 +6,9 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   imports: [
@@ -14,6 +17,9 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
     LayoutModule
 
   ],
@@ -23,6 +29,9 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
     LayoutModule
   ],
   providers: []
