@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid d-block">
+    <div class="row">
+      <div class="col col-md-4 col-sm-12">
+        <a class="navbar-brand text-center" [routerLink]="['/']"><img style="height:50px;" src="/assets/images/Logo_Black.png" class="img-fluid mx-auto d-block" role="img" alt="DDJ Temp Logo"></a>
+      </div>
+      <div class="col col-md-4 col-sm-12">
+        <form class="form-inline d-block navbar-search">
+          <!-- Another variation with a button -->
+          <div class="input-group mt-3 col-sm-12">
+            <input type="text" class="form-control form-control-lg" placeholder="Search Deals/Customer name, Deal Number, etc.">
+              <div class="input-group-append">
+                  <button class="btn btn-primary" type="button">
+                      <mat-icon class="m-search">search</mat-icon>
+                  </button>
+              </div>
+          </div>
+        </form>
+      </div>
+      <div class="col col-md-4 col-sm-12">
+        <div class="flex-container center mt-3 ml-3">
+          <mat-icon class="">settings</mat-icon>
+          <button class="ml-4" mat-flat-button color="primary">Add a new Doc</button>
+          <button class="ml-2" mat-flat-button color="accent">Logout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

@@ -5,29 +5,23 @@ import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { AppComponent } from './app.component';
 import { Dashboard1 } from './dashboard1/dashboard1.module';
-	// Services
 import { ErrorHandlerService } from './services/error-handler.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './components/home/home.component';
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent
-  ],
+  declarations: [AppComponent, HomeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     CommonModule,
-    Dashboard1
+    Dashboard1,
   ],
-  providers: [{provide: ErrorHandlerService, useClass: ErrorHandlerService}],
-  bootstrap: [AppComponent]
+  providers: [ErrorHandlerService],
+  bootstrap: [AppComponent],
 })
 export class AppModule {
-
   constructor(private readonly router: Router) {
-    router.events
-      .subscribe(console.log)
+    router.events.subscribe(console.log);
   }
 }
